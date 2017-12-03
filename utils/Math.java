@@ -2,7 +2,7 @@ package utils;
 
 public class Math
 {
-	public static int factorial(int num)
+	public static long factorial(int num)
 	{
 		if (num <= 1) {
 			return 1;
@@ -10,9 +10,9 @@ public class Math
 		return num * factorial(num - 1);
 	}
 
-	public static int factorialLoop(int num)
+	public static long factorialLoop(int num)
 	{
-		int result = 1;
+		long result = 1;
 		for (int i = num; i >= 1; i--) {
 			result *= i;
 		}
